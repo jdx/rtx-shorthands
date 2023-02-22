@@ -11,7 +11,7 @@ The purpose of putting it into a plugin is just so that it can be updated with `
 First, clone the repo and add a CUSTOM_PLUGIN to [`shorthands.toml`](./shorthands.toml).
 
 ```sh-session
-$ rtx plugin install rtx-shorthands
+$ rtx plugin install rtx-shorthands PLUGIN_GIT_URL
 $ rtx settings set shorthands_file ~/.local/share/rtx/plugins/rtx-shorthands/shorthands.toml
 $ rtx plugin install CUSTOM_PLUGIN
 ```
