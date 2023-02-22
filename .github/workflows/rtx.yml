@@ -20,9 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: rtx install
-        uses: jdxcode/rtx-action@v1.0.0
-      #- uses: jdxcode/rtx-action@v1
+      - uses: jdxcode/rtx-action@v1
       # .tool-versions will be read from repo root
       - run: which node
       - run: node -v
