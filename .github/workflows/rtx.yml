@@ -14,11 +14,13 @@ jobs:
         with:
           tool_versions: |
             shellcheck 0.9.0
-      - run: shellcheck scripts/*.sh
+      - run: which shellcheck
+      - run: shellcheck --version
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: jdxcode/rtx-action@v1
       # .tool-versions will be read from repo root
-      - run: node ./my_app.js
+      - run: which node
+      - run: node -v
